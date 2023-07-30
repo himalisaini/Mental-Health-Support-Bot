@@ -1,0 +1,1 @@
+/Users/himalisaini/.local/bin/poetry run python3 textbase/textbase_cli.py test main.py
