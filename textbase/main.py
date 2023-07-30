@@ -14,7 +14,7 @@ import os
 
 This file, main.py, includes the implementation of the MentalHealthSupportBot, which is a chatbot designed to offer mental health support to users. The following points summarize its functionalities:
 
-- The MentalHealthSupportBot maintains a `counter` and the `state` of the conversation, which helps to determine the next actions of the chatbot.
+- The MentalHealthSupportBot maintains a `duration` and the `state` of the conversation, which helps to determine the next actions of the chatbot.
 
 - It analyzes the sentiment of the user's input using a sentiment analysis pipeline (uses model distilbert-base-uncased-finetuned-sst-2-english). The analysis output is used to decide the appropriate response.
 
@@ -69,10 +69,10 @@ def getJokes():
 
 @textbase.chatbot("mental-health-support-bot")
 def on_message(message_history: List[Message], state: dict = None):
-    if state is None or "counter" not in state:
-        state = {"counter": 0, "stage": "greeting"}
+    if state is None or "duration" not in state:
+        state = {"duration": 0, "stage": "greeting"}
     else:
-        state["counter"] += 1
+        state["duration"] += 1
 
     
     # Build the list of message objects
@@ -88,7 +88,7 @@ def on_message(message_history: List[Message], state: dict = None):
     # Decide prompt message based on sentiment
     prompt_message = ""
 
-    if state["counter"] % 100 == 0:
+    if state["duration"] % 100 == 0:
         # Time to wrap up
         prompt_message = PROMPTS['wrap_up'] + PROMPTS['guideline']
 
@@ -99,9 +99,9 @@ def on_message(message_history: List[Message], state: dict = None):
     elif sentiment['label'] == 'POSITIVE' and sentiment['score']>0.95:
         prompt_message = PROMPTS['encouragement'] + PROMPTS['guideline']
         x = random.random()
-        if(x<=0.25):
+        if(x<=0.4):
             prompt_message += PROMPTS['positive_quote'] + getPositiveQuotes() + PROMPTS['guideline']
-        elif(x<=0.5):
+        elif(x<=0.6):
             prompt_message += PROMPTS['joke'] + getJokes() + PROMPTS['guideline']
         state["stage"] = "Positive"
     else:
