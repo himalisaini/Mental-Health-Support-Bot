@@ -1,5 +1,6 @@
 # Mental-Health-Support-Bot
 Developed as a part of Hackathon for Mercor
+The main logic is present in the textbase/main.py file
 
 # Mental Health Support Bot
 
