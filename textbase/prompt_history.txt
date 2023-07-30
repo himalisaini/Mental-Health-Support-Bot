@@ -3,70 +3,38 @@ Positive  ->  The user needs encouragement, make sure you dont include any topic
 User message sentiment analysis
 POSITIVE/ 0.9996092915534973
 Bot message sentiment analysis
-POSITIVE/ 0.999100923538208
+POSITIVE/ 0.9998522996902466
 
 
 User state & Prompt
 Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
 User message sentiment analysis
-NEGATIVE/ 0.9990872144699097
+NEGATIVE/ 0.9991856217384338
 Bot message sentiment analysis
-POSITIVE/ 0.9956539869308472
+POSITIVE/ 0.9954778552055359
 
 
 User state & Prompt
 Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
 User message sentiment analysis
-NEGATIVE/ 0.9996875524520874
+NEGATIVE/ 0.9920684099197388
 Bot message sentiment analysis
-POSITIVE/ 0.9989618062973022
+POSITIVE/ 0.9897601008415222
 
 
 User state & Prompt
 Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
 User message sentiment analysis
-NEGATIVE/ 0.9995586276054382
+NEGATIVE/ 0.9924669861793518
 Bot message sentiment analysis
-POSITIVE/ 0.9978246688842773
+POSITIVE/ 0.9939574003219604
 
 
 User state & Prompt
 Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
 User message sentiment analysis
-NEGATIVE/ 0.9957877993583679
+NEGATIVE/ 0.9960817694664001
 Bot message sentiment analysis
-POSITIVE/ 0.995789110660553
-
-
-User state & Prompt
-Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
-User message sentiment analysis
-NEGATIVE/ 0.9978394508361816
-Bot message sentiment analysis
-POSITIVE/ 0.7262473106384277
-
-
-User state & Prompt
-Solution  ->  Give some solutions for user's problems, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
-User message sentiment analysis
-POSITIVE/ 0.6352759599685669
-Bot message sentiment analysis
-POSITIVE/ 0.998469889163971
-
-
-User state & Prompt
-Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
-User message sentiment analysis
-NEGATIVE/ 0.9996610879898071
-Bot message sentiment analysis
-NEGATIVE/ 0.9731819033622742
-
-
-User state & Prompt
-Negative  ->  Reassure the user that everything will be fine, make sure you dont include any topic which can trigger the user based on conversation history and your understanding of user. Dont make use of negative suggestions
-User message sentiment analysis
-NEGATIVE/ 0.9937798380851746
-Bot message sentiment analysis
-NEGATIVE/ 0.9731819033622742
+POSITIVE/ 0.6011622548103333
 
 
